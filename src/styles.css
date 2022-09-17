@@ -1,0 +1,126 @@
+.cities {
+  text-align: center;
+  color: #f1f1f1;
+  width: 110px;
+  height: 35px;
+  margin-left: 20px;
+  background-color: transparent;
+  border: none;
+  margin-top: 15px;
+}
+.cities:hover {
+  background-color: rgb(244, 238, 238, 0.3);
+  border-radius: 5px;
+  color: black;
+}
+.icons {
+  background-color: transparent;
+  border: none;
+  margin-top: 15px;
+  width: 50px;
+  color: #f1f1f1;
+  font-style: bold;
+  margin-left: 5px;
+  height: 35px;
+}
+.icons:hover {
+  background-color: rgb(244, 238, 238, 0.3);
+  border-radius: 5px;
+  color: black;
+  border: none;
+}
+.current-temperature {
+  display: block;
+  margin-top: 350px;
+  margin-left: 20px;
+  position: fixed;
+  color: rgb(244, 238, 238);
+}
+.units a {
+  font-size: 30px;
+  color: rgb(244, 238, 238, 0.3);
+  text-decoration: none;
+}
+a:hover {
+  background-color: rgb(244, 238, 238, 0.3);
+  border-radius: 5px;
+  color: black;
+  border: none;
+}
+.units .active {
+  color: white;
+}
+#celsius-link {
+  position: relative;
+  top: -43px;
+}
+#fahrenheit-link {
+  position: relative;
+  left: -17px;
+}
+#temperature {
+  font-size: 90px;
+}
+#degreesIcon {
+  position: relative;
+  top: -45px;
+  font-size: 24px;
+}
+#city {
+  font-size: 50px;
+  position: relative;
+  top: -30px;
+  right: 240px;
+}
+#currentDate {
+  position: relative;
+  margin-left: 20px;
+  font-size: 22px;
+  color: rgb(244, 238, 238, 0.9);
+}
+#backgroundVideo {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 40px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  color: #f1f1f1;
+  height: 100%;
+  max-width: 100%;
+}
+#citySearchButton {
+  background: transparent;
+  border: none;
+  width: 200px;
+  height: 35px;
+  margin-top: 16px;
+  border-radius: 5px;
+}
+#citySearchButton:hover {
+  background-color: rgb(244, 238, 238, 0.3);
+  border-radius: 5px;
+  color: black;
+}
+.source {
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  color: white;
+}
+#source {
+  color: rgb(244, 238, 238, 0.3);
+}
+#weather-icon {
+  width: 40px;
+  height: 40px;
+}
