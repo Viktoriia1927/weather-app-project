@@ -24,7 +24,7 @@ function formatedDate(now) {
   ];
   let month = months[now.getMonth()];
 
-  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let day = days[now.getDay()];
   return `${day} ${date} ${month} ${hours}:${minutes}`;
 }
@@ -41,7 +41,31 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index === 0) {
+      forecastHTML =
+        forecastHTML +
+        `
+      <div class="col-2">
+        <div class="weather-forecast-date">Today</div>
+        <img
+          src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
+          alt=""
+          width="42"
+        />
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> ${Math.round(
+            forecastDay.temp.max
+          )}° </span>
+          <span class="weather-forecast-temperature-min"> ${Math.round(
+            forecastDay.temp.min
+          )}° </span>
+        </div>
+      </div>
+  `;
+    }
+    if ((index > 0) & (index < 6)) {
       forecastHTML =
         forecastHTML +
         `
@@ -57,10 +81,10 @@ function displayForecast(response) {
         <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-max"> ${Math.round(
             forecastDay.temp.max
-          )}° </span>
+          )}°  </span>
           <span class="weather-forecast-temperature-min"> ${Math.round(
             forecastDay.temp.min
-          )}° </span>
+          )}°  </span>
         </div>
       </div>
   `;
