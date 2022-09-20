@@ -31,7 +31,7 @@
 }
 .current-temperature {
   display: block;
-  margin-top: 250px;
+  margin-top: 200px;
   position: fixed;
   color: rgb(244, 238, 238);
 }
