@@ -31,8 +31,7 @@
 }
 .current-temperature {
   display: block;
-  margin-top: 300px;
-  margin-left: 20px;
+  margin-top: 250px;
   position: fixed;
   color: rgb(244, 238, 238);
 }
@@ -59,7 +58,7 @@ a:hover {
   left: -17px;
 }
 #temperature {
-  font-size: 90px;
+  font-size: 70px;
 }
 #degreesIcon {
   position: relative;
@@ -67,15 +66,12 @@ a:hover {
   font-size: 24px;
 }
 #city {
-  font-size: 50px;
+  font-size: 30px;
   position: relative;
-  top: -30px;
-  right: 250px;
 }
 #currentDate {
-  position: relative;
-  margin-left: 20px;
   font-size: 22px;
+  margin-top: -10px;
   color: rgb(244, 238, 238, 0.9);
 }
 #backgroundVideo {
@@ -86,12 +82,11 @@ a:hover {
   right: 0;
   bottom: -10px;
 }
-
 .container {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-left: 40px;
+  padding-left: 30px;
   position: fixed;
   background: rgba(0, 0, 0, 0.3);
   color: #f1f1f1;
@@ -113,12 +108,13 @@ a:hover {
 }
 .source {
   display: block;
-  margin-top: 40px;
-  font-size: 15px;
+  margin-top: 30px;
+  font-size: 12px;
   color: white;
 }
 #source {
-  color: rgb(244, 238, 238, 0.3);
+  color: #ec6e4c;
+  text-decoration: none;
 }
 #weather-icon {
   width: 40px;
@@ -129,5 +125,20 @@ a:hover {
   font-size: 15px;
 }
 #forecast {
-  margin-top: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+#today {
+  background-color: rgb(244, 238, 238, 0.3);
+  border-radius: 5px;
+  color: black;
+}
+#day:hover {
+  background-color: rgb(244, 238, 238, 0.3);
+  border-radius: 5px;
+  color: black;
+}
+.search {
+  display: flex;
+  justify-content: center;
 }
