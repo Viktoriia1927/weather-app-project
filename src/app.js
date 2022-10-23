@@ -124,8 +124,9 @@ function findCity(citySearch) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let citySearch = document.querySelector("#citySearchButton").value;
-  findCity(citySearch);
+  let cityInput = document.querySelector("#citySearchButton");
+  findCity(cityInput.value);
+  cityInput.value = "";
 }
 function handlePosition(position) {
   let lat = position.coords.latitude;
